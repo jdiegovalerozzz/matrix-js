@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Matrices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="matrix-section">
+            <h2>Matriz A</h2>
+            <div id="matrixA" class="matrix-container">
+                <!-- Las filas y columnas de la matriz A se crearán aquí -->
+            </div>
+            <button onclick="addRow('matrixA')">Agregar Fila</button>
+            <button onclick="addColumn('matrixA')">Agregar Columna</button>
+            <button onclick="removeRow('matrixA')">Eliminar Fila</button>
+            <button onclick="removeColumn('matrixA')">Eliminar Columna</button>
+        </div>
+
+        <div class="matrix-section">
+            <h2>Matriz B</h2>
+            <div id="matrixB" class="matrix-container">
+                <!-- Las filas y columnas de la matriz B se crearán aquí -->
+            </div>
+            <button onclick="addRow('matrixB')">Agregar Fila</button>
+            <button onclick="addColumn('matrixB')">Agregar Columna</button>
+            <button onclick="removeRow('matrixB')">Eliminar Fila</button>
+            <button onclick="removeColumn('matrixB')">Eliminar Columna</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="performAddition()">Sumar Matrices</button>
+            <button onclick="performSubtraction()">Restar Matrices</button>
+            <button onclick="performMultiplication()">Multiplicar Matrices</button>
+            <button onclick="performTranspose()">Transponer Matriz A</button>
+            <button onclick="performInverse()">Inversa de Matriz A</button>
+            <button onclick="performIdentity()">Matriz Identidad</button>
+            <button onclick="performScalarProduct()">Producto Escalar</button>
+        </div>
+
+        <div id="output">
+            <h3>Resultados</h3>
+            <div id="operationResult"></div>
+        </div>
+
+        <div id="identityMatrix">
+            <h3>Matriz Identidad</h3>
+            <div class="matrix"></div>
+        </div>
+    </div>
+
+    <script src="matrix.js"></script>
+</body>
+</html>
